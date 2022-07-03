@@ -30,7 +30,7 @@ const MovieDetailsPage = () => {
       }
     }
     fetchMovie();
-  }, [movieId]);
+  }, [idMovie]);
 
   const defaultPoster = `https://i.pinimg.com/200x/e4/71/1e/fea9bd6cc64d250f3b3bb2ecec82173d.jpg`;
 
@@ -41,7 +41,6 @@ const MovieDetailsPage = () => {
         <FaArrowAltCircleLeft className={s.arrowLink} />
         <Link to={goBackURL}>Go back</Link>
       </div>
-      {/* {movieId} */}
       {movie && 
       <div>
         <div className={s.container}>
